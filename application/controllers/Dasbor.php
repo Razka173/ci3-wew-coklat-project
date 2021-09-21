@@ -111,7 +111,7 @@ class Dasbor extends CI_Controller {
 	public function password(){
 		// Ambil data login id_pelanggan dari SESSION
 		$id_pelanggan 		= $this->session->userdata('id_pelanggan');
-		$email 				= $this->session->userdata('emai;');
+		$email 				= $this->session->userdata('email');
 		$pelanggan 			= $this->pelanggan_model->detail($id_pelanggan);
 
 		// Validasi input
